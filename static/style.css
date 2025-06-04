@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fffde7);
+    padding: 40px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+h1 {
+    color: #1565c0;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #b0bec5;
+    border-radius: 8px;
+    background-color: #f1f8e9;
+    transition: border 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #64b5f6;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 12px 35px;
+    font-size: 18px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+.flash-messages {
+    list-style-type: none;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+.flash-messages li {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #a94442;
+    border-radius: 4px;
+}
